@@ -1,6 +1,6 @@
-# Help Note
+Developer Hand Book
 
-##Git Command
+#Git Command
 ### To clone perticualr branch of git
 ```bash
 git clone -b <branch_name> <remote_repo>(git@github.com:prashantkoshta/angularjs-dashboard.git)
