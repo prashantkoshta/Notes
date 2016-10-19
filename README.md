@@ -9,6 +9,27 @@ git clone -b <branch_name> <remote_repo>(git@github.com:prashantkoshta/angularjs
 ```bash
 git checkout  -b <branch_name>
 ```
+### To commit changes on git
+- check git status
+```bash
+git status
+```
+- add modifed files. `.` show add all modified files. If you need to add specific file give file name instead of `.`.
+```bash
+git add .
+```
+- Check file status
+```bash
+git status
+```
+- Commit changes
+```bash
+git commit -m "<YOUR_COMMENTS_ON_COMMIT>
+```
+- Push changes
+```bash
+git push
+```
 ### Set Beyond Compare as difftool for git.
 ```bash
 git config --global diff.tool bc3
