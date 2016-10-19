@@ -102,3 +102,20 @@ git status
 git commit -m "<YOUR_COMMENTS_ON_COMMIT>"
 git push
 ```
+##To see the current configured remote repository for your fork.
+```bash
+git remote -v
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+```
+##To add upstream in your fork to push changes into main respositroy from your froked repository.
+```bash
+git remote add upstream https://github.com/octocat/Spoon-Knife.git
+```
+```bash
+git remote -v
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+```
