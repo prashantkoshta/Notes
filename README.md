@@ -14,6 +14,10 @@ git checkout  -b <branch_name>
 git config --global diff.tool bc3
 git config --global difftool.bc3.path "C:/Program Files (x86)/Beyond Compare 3/BCompare.exe"
 ```
+### Show last log. -4 show last 4 logs.
+```bash
+git log -4
+```
 ### To check file difference by BC tool.
 ```bash
 git difftool
