@@ -9,7 +9,7 @@ git clone -b <branch_name> <remote_repo>(git@github.com:prashantkoshta/angularjs
 ```bash
 git checkout <branch_name>
 ```
-## To create new branch form existing branch. 
+### To create new branch form existing branch. 
 - Checkout branch from which you want to create new branch. Like i checkout master and from master i am createing new branch `dev_0.1`
 ```bash
 git checkout <exiting_branch_name>
