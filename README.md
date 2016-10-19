@@ -7,7 +7,21 @@ git clone -b <branch_name> <remote_repo>(git@github.com:prashantkoshta/angularjs
 ```
 ### To checkout perticular branch
 ```bash
-git checkout  -b <branch_name>
+git checkout <branch_name>
+```
+## To create new branch form existing branch. 
+- Checkout branch from which you want to create new branch. Like i checkout master and from master i am createing new branch `dev_0.1`
+```bash
+git checkout <exiting_branch_name>
+git checkout -b <new_branch_name>
+git push <remote-name> <branch_name>
+```
+Where `<remote-name>` is typically `origin`, the name which git gives to the remote you cloned from.
+Example:
+```bash
+git checkout master
+git checkout -b dev_0.1
+git push origin dev_0.1
 ```
 ### To commit changes on git
 - check git status
