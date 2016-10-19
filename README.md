@@ -81,3 +81,24 @@ git reset --hard HEAD
 ```bash
 git diff --name-only HEAD HEAD~1
 ```
+### Merging branch and solving conflits
+Assuming you have 2 branch master and dev_0.1. dev_0.1 is 2 commit behind the master. Now we have to merge master changes into dev_0.1. So my dev_0.1 will includ all master recent changes. 
+```bash
+git checkout <branch_name> Like dev_0.1
+git merge <remote_name>/<branch_name> Like git merge orgin/master
+```
+- It may show confilit or auto merge changes.
+- If it show confilit then your branch bash path show like `(dev_0.1|MERGING)`. In this case we have confilict on code. It dispaly like this in confilict files.
+```bash
+<<<<<<< HEAD
+	res.send("Hello world now");
+=======
+	res.send("Hello World Master Change");
+>>>>>>> origin/master
+```
+- Next step remove confilict from files and chek file status and commit then push.
+```bash
+git status
+git commit -m "<YOUR_COMMENTS_ON_COMMIT>"
+git push
+```
