@@ -9,18 +9,10 @@ git clone -b <branch_name> <remote_repo>(git@github.com:prashantkoshta/angularjs
 ```bash
 git checkout  -b <branch_name>
 ```
-### Set Beyond Compare as difftool for git. Append below code in `.gitconfig` file.
+### Set Beyond Compare as difftool for git.
 ```bash
-[merge]
-	tool = bc3
-[difftool "bcompare"]
-	path = C:\\Program Files (x86)\\Beyond Compare 3\\BComp.exe
-[mergetool "bc3"]
-	path = c:/Program Files (x86)/Beyond Compare 3/bcomp.exe
-[diff]
-	tool = bc3
-[difftool "bc3"]
-	path = C:/Program Files (x86)/Beyond Compare 3/BCompare.exe
+git config --global diff.tool bc3
+git config --global difftool.bc3.path "C:/Program Files (x86)/Beyond Compare 3/BCompare.exe"
 ```
 ### To check file difference by BC tool.
 ```bash
