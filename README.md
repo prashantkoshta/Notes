@@ -44,6 +44,10 @@ git commit -m "<YOUR_COMMENTS_ON_COMMIT>
 ```bash
 git push
 ```
+### To pull changes into local from remote branch.
+```bash
+git pull
+```
 ### Set Beyond Compare as difftool for git.
 ```bash
 git config --global diff.tool bc3
