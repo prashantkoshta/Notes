@@ -81,7 +81,7 @@ git reset --hard HEAD
 ```bash
 git diff --name-only HEAD HEAD~1
 ```
-### Merging branch and solving conflits
+### Merging branch and solving conflicts
 Assuming you have 2 branch master and dev_0.1. dev_0.1 is 2 commit behind the master. Now we have to merge master changes into dev_0.1. So my dev_0.1 will includ all master recent changes. 
 ```bash
 git checkout <branch_name> Like dev_0.1
