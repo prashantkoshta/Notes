@@ -1,3 +1,4 @@
+[![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme)](https://github.com/prashantkoshta/developer-hand-book)
 #Developer Hand Book
 
 ##Git Command
@@ -124,4 +125,4 @@ upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
 upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 ```
 
-[![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme)](https://github.com/prashantkoshta/developer-hand-book)
+
