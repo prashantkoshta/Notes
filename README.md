@@ -1,4 +1,3 @@
-[![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme?pixel)](https://github.com/prashantkoshta/developer-hand-book)
 #Developer Hand Book
 
 ##Git Command
@@ -141,3 +140,4 @@ git branch -d dev_0.1
 git push origin --delete dev_0.1
 ```
 
+[![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme?pixel)](https://github.com/prashantkoshta/developer-hand-book)
