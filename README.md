@@ -139,5 +139,22 @@ git checkout master
 git branch -d dev_0.1
 git push origin --delete dev_0.1
 ```
+###stash your local chagnes
+-Use this if you like to save your local changes but dont want to commit until its not completed and do some work on other branch.
+```bash
+git stash list // show list of stash code.
+git stash // Create stash
+git stash pop //Pop your stash code
+```
+Example:
+```bash
+git checkout dev_0.1
+.... Made some changes on code.
+git stash
+git checkout master
+git checkout dev_0.1
+git stash pop	
+// Pop all local changes on which i kept save in stash but not commited and continue my work from there.
+```
 
 [![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme?pixel)](https://github.com/prashantkoshta/developer-hand-book)
