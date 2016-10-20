@@ -1,4 +1,4 @@
-[![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme)](https://github.com/prashantkoshta/developer-hand-book)
+[![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme?pixel)](https://github.com/prashantkoshta/developer-hand-book)
 #Developer Hand Book
 
 ##Git Command
@@ -124,5 +124,20 @@ origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
 upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 ```
-
+##To Delete git branch from local or server
+- Moveout from brach which you like to delete, checkout any other branch.
+Example: I like to delete dev_0.1 branch. So i checkout master branch
+```bash
+git branch
+git checkout <branch_name> 
+git branch -d <delete_branch_name> //Use -D instead to force deletion without checking merged status
+git branch
+git push origin --delete <delete_branch_name> // This will push changes in remote branch.
+```
+Like:
+```bash
+git checkout master
+git branch -d dev_0.1
+git push origin --delete dev_0.1
+```
 
