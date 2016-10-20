@@ -123,7 +123,7 @@ origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
 upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 ```
-##To Delete git branch from local or server
+##To Delete git branch from local/remote
 - Moveout from brach which you like to delete, checkout any other branch.
 Example: I like to delete dev_0.1 branch. So i checkout master branch
 ```bash
