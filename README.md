@@ -1,6 +1,12 @@
 #Developer Hand Book
 
 ##Git Command
+###Set your identity for first time user. So it show your name and details when you commit.
+```bash
+git config --global user.name "Your Name"
+git config --global user.email abcdefs@example.com
+```
+
 ### To clone perticualr branch of git
 ```bash
 git clone -b <branch_name> <remote_repo>(git@github.com:prashantkoshta/angularjs-dashboard.git)
