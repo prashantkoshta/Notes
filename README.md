@@ -163,4 +163,23 @@ git stash pop
 // Pop all local changes on which i kept save in stash but not commited and continue my work from there.
 ```
 
+### Set env variable in window by git bash
+```bash
+export JAVA_HOME="/C/Program Files/Java/jdk1.7.0_79"
+echo $JAVA_HOME
+```
+### Set variable one time before launch bash
+- Go to git bash home directory
+```bash
+touch .bashrc
+```
+- Edit `.bashrc` with required env variables
+```bash
+export JAVA_HOME="/C/Program Files/Java/jdk1.7.0_79"
+export GRADLE_HOME="/C/Users/gradle-2.10"
+export ANDROID_HOME="/C/Users/android-sdk-windows"
+export MAVEN_LOCAL_DIR=$ANDROID_HOME/extras/android/m2repository
+export PATH=$PATH:$JAVA_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platforms
+```
+
 [![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme?pixel)](https://github.com/prashantkoshta/developer-hand-book)
