@@ -145,7 +145,7 @@ git checkout master
 git branch -d dev_0.1
 git push origin --delete dev_0.1
 ```
-###stash your local chagnes
+##stash your local chagnes
 -Use this if you like to save your local changes but dont want to commit until its not completed and do some work on other branch.
 ```bash
 git stash list // show list of stash code.
@@ -163,12 +163,12 @@ git stash pop
 // Pop all local changes on which i kept save in stash but not commited and continue my work from there.
 ```
 
-### Set env variable in window by git bash
+## Set env variable in window by git bash
 ```bash
 export JAVA_HOME="/C/Program Files/Java/jdk1.7.0_79"
 echo $JAVA_HOME
 ```
-### Set variable one time before launch bash
+## Set variable one time before launch bash
 - Go to git bash home directory
 ```bash
 touch .bashrc
@@ -181,5 +181,54 @@ export ANDROID_HOME="/C/Users/android-sdk-windows"
 export MAVEN_LOCAL_DIR=$ANDROID_HOME/extras/android/m2repository
 export PATH=$PATH:$JAVA_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platforms
 ```
+## Working with frok and upstream
+- Check upstream branch
+```bash
+git remote -v
+```
+- Add upstream branch into fork
+```bash 
+git remote add upstream https://github.com/test/test-demo.git
+```
+- Get upstream branh into fork, which is not present in fork.
+```bash
+git fetch upstream
+git checkout <UPSTREAM_BRANC_NAME>
+git push origin <UPSTREAM_BRANC_NAME> // It will add branch in fork repository
+```
+
+- Reset local changes in frok repository branch with upstream branch
+```bash
+git reset --hard upstream/<BRANCH_NAME>
+```
+
+- pull changes from upstream branch to frok repo branch
+```bash
+git pull upstram <branch_name>  // Fix confilicts if you get any.
+git add .
+git commit -m "<COMMENTS>"
+git push origin <BRANC_NAME>
+```
+
+
+- To merge upstream changes into frok branch / syncing a fork
+```bash
+git fetch upstream
+git diff upstream/<BRANC_NAME> origin/<BRANC_NAME>
+git merge upstream/<BRANC_NAME>  // Fix confilicts if you get any.
+git status
+git add .
+git status
+git commit -m "<COMMENTS>"
+git push origin <BRANC_NAME>
+```
+
+- To abrot rebase skip or continue
+```bash
+git rebase --continue
+git rebase --skip
+git rebase --abort // it move to dev_0.1 from (dev_0.1|REBASE 2/3) 
+```
+
 
 [![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme?pixel)](https://github.com/prashantkoshta/developer-hand-book)
