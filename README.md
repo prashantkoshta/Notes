@@ -193,8 +193,8 @@ git remote add upstream https://github.com/test/test-demo.git
 - Get upstream branh into fork, which is not present in fork.
 ```bash
 git fetch upstream
-git checkout <UPSTREAM_BRANC_NAME>
-git push origin <UPSTREAM_BRANC_NAME> // It will add branch in fork repository
+git checkout <UPSTREAM_BRANCH_NAME>
+git push origin <UPSTREAM_BRANCH_NAME> // It will add branch in fork repository
 ```
 
 - Reset local changes in frok repository branch with upstream branch
@@ -207,18 +207,18 @@ git reset --hard upstream/<BRANCH_NAME>
 git pull upstram <branch_name>  // Fix confilicts if you get any.
 git add .
 git commit -m "<COMMENTS>"
-git push origin <BRANC_NAME>
+git push origin <BRANCH_NAME>
 ```
 - To merge upstream changes into frok branch / syncing a fork
 ```bash
 git fetch upstream
-git diff upstream/<BRANC_NAME> origin/<BRANC_NAME>
-git merge upstream/<BRANC_NAME>  // Fix confilicts if you get any.
+git diff upstream/<BRANCH_NAME> origin/<BRANCH_NAME>
+git merge upstream/<BRANCH_NAME>  // Fix confilicts if you get any.
 git status
 git add .
 git status
 git commit -m "<COMMENTS>"
-git push origin <BRANC_NAME>
+git push origin <BRANCH_NAME>
 ```
 
 - To abort rebase skip or continue
