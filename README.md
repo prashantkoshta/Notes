@@ -1,6 +1,5 @@
-#Developer Hand Book
-
-##Git Command
+#Git Command
+##
 ###Set your identity for first time user. So it show your name and details when you commit.
 ```bash
 git config --global user.name "Your Name"
@@ -112,13 +111,13 @@ git status
 git commit -m "<YOUR_COMMENTS_ON_COMMIT>"
 git push
 ```
-##To see the current configured remote repository for your fork.
+###To see the current configured remote repository for your fork.
 ```bash
 git remote -v
 origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
 origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 ```
-##To add upstream in your fork to push changes into main respositroy from your froked repository.
+###To add upstream in your fork to push changes into main respositroy from your froked repository.
 ```bash
 git remote add upstream https://github.com/octocat/Spoon-Knife.git
 ```
@@ -129,7 +128,7 @@ origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
 upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 ```
-##To Delete git branch from local/remote
+###To Delete git branch from local/remote
 - Moveout from brach which you like to delete, checkout any other branch.
 Example: I like to delete dev_0.1 branch. So i checkout master branch
 ```bash
@@ -145,7 +144,7 @@ git checkout master
 git branch -d dev_0.1
 git push origin --delete dev_0.1
 ```
-##stash your local chagnes
+###stash your local chagnes
 -Use this if you like to save your local changes but dont want to commit until its not completed and do some work on other branch.
 ```bash
 git stash list // show list of stash code.
@@ -163,13 +162,13 @@ git stash pop
 // Pop all local changes on which i kept save in stash but not commited and continue my work from there.
 ```
 
-## Set env variable in window by git bash
+###Set env variable in window by git bash
 ```bash
 export JAVA_HOME="/C/Program Files/Java/jdk1.7.0_79"
 echo $JAVA_HOME
 ```
-## Set variable one time before launch bash
-- Go to git bash home directory
+###Set environment variable in git base
+- Go to git bash home directory. It is genrally `C:\Users\user_name`
 ```bash
 touch .bashrc
 ```
@@ -181,7 +180,7 @@ export ANDROID_HOME="/C/Users/android-sdk-windows"
 export MAVEN_LOCAL_DIR=$ANDROID_HOME/extras/android/m2repository
 export PATH=$PATH:$JAVA_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platforms
 ```
-## Working with frok and upstream
+###Working with frok and upstream
 - Check upstream branch
 ```bash
 git remote -v
@@ -190,6 +189,7 @@ git remote -v
 ```bash 
 git remote add upstream https://github.com/test/test-demo.git
 ```
+
 - Get upstream branh into fork, which is not present in fork.
 ```bash
 git fetch upstream
@@ -209,8 +209,6 @@ git add .
 git commit -m "<COMMENTS>"
 git push origin <BRANC_NAME>
 ```
-
-
 - To merge upstream changes into frok branch / syncing a fork
 ```bash
 git fetch upstream
@@ -223,7 +221,7 @@ git commit -m "<COMMENTS>"
 git push origin <BRANC_NAME>
 ```
 
-- To abrot rebase skip or continue
+- To abort rebase skip or continue
 ```bash
 git rebase --continue
 git rebase --skip
