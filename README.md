@@ -6,11 +6,11 @@ git config --global user.name "Your Name"
 git config --global user.email abcdefs@example.com
 ```
 
-### To clone perticualr branch of git
+### To clone particular branch of git
 ```bash
 git clone -b <branch_name> <remote_repo>(git@github.com:prashantkoshta/angularjs-dashboard.git)
 ```
-### To checkout perticular branch
+### To checkout particular branch
 ```bash
 git checkout <branch_name>
 ```
