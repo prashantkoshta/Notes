@@ -228,7 +228,7 @@ git rebase --skip
 git rebase --abort // it move to dev_0.1 from (dev_0.1|REBASE 2/3) 
 ```
 
-### Revet changes in git branch
+### Revert changes in git branch
 ```bash
 git log
 git revert --no-commit 5fde377..HEAD // 5fde377 commit number
