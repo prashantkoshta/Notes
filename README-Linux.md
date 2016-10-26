@@ -40,6 +40,12 @@ where
 ```bash
 man mv
 ```
+###grep command
+The grep command is used to search text or searches the given file for lines containing a match to the given strings or words.
+```bash
+grep 'word' file1 file2 file3
+grpe -r 'Hello World' ./dir_name  //  read all files under each directory for search 'Hello World'
+```
 
 ###Common
 ```bash
@@ -54,6 +60,8 @@ who //Print all usernames currently logged in
 man //help manual
 mv Move or rename files or directories
 mount //Mount a file system
+kill  // to kill process by PID
+
 ```
 
 ###vi Editor
@@ -66,4 +74,4 @@ Help on vi editor
 - ^f for forward screen
 - ^b for backward screen
 - Esc+ :wq for save and quit
-- Esc+ :q for quit without save.
+- Esc+ :q! for quit without save.
