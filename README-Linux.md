@@ -40,6 +40,10 @@ where
 ```bash
 man mv
 ```
+###Remove Directoy and file
+```bash
+rm -rf ./temp
+```
 ###grep command
 The grep command is used to search text or searches the given file for lines containing a match to the given strings or words.
 ```bash
@@ -75,3 +79,23 @@ Help on vi editor
 - ^b for backward screen
 - Esc+ :wq for save and quit
 - Esc+ :q! for quit without save.
+
+
+### Create or Extract tar file
+-Create
+```bash
+tar -cvf tarfilename.tar /path/to/directory  // Crate tar of give driectory
+tar -cvf tarfilename.tar /path/to/file-1 /path/to/file-2 //To create an archive of certfain files
+tar -cvf tarfilename.tar /path/to/directory --exclude="*.png" //To exclude certian file from tar.
+```
+-Extract
+```bash
+tar -xvf tar_file.tar
+tar -xvf tar_file.tar note.txt //Extract single file from tar
+tar -xvf tar_file.tar bin // Extract a single directory called bin,
+```
+-To see file and directory in tar without extract
+```bash
+tar -tf tar_filename.tar
+```
+
