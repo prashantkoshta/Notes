@@ -62,7 +62,7 @@ rm //remove files
 whoami // Print the current user id and name (`id -un')
 who //Print all usernames currently logged in
 man //help manual
-mv Move or rename files or directories
+mv ./soruce ./target Move or rename files or directories
 mount //Mount a file system
 kill  // to kill process by PID
 
