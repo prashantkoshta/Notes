@@ -117,7 +117,7 @@ git remote -v
 origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
 origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 ```
-###To add upstream in your fork to push changes into main respositroy from your froked repository.
+###To add upstream in your fork to push changes into main respositroy from your fork repository.
 ```bash
 git remote add upstream https://github.com/octocat/Spoon-Knife.git
 ```
@@ -180,7 +180,7 @@ export ANDROID_HOME="/C/Users/android-sdk-windows"
 export MAVEN_LOCAL_DIR=$ANDROID_HOME/extras/android/m2repository
 export PATH=$PATH:$JAVA_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platforms
 ```
-###Working with frok and upstream
+###Working with fork and upstream
 - Check upstream branch
 ```bash
 git remote -v
@@ -197,19 +197,19 @@ git checkout <UPSTREAM_BRANCH_NAME>
 git push origin <UPSTREAM_BRANCH_NAME> // It will add branch in fork repository
 ```
 
-- Reset local changes in frok repository branch with upstream branch
+- Reset local changes in fork repository branch with upstream branch
 ```bash
 git reset --hard upstream/<BRANCH_NAME>
 ```
 
-- pull changes from upstream branch to frok repo branch
+- pull changes from upstream branch to fork repo branch
 ```bash
 git pull upstram <branch_name>  // Fix confilicts if you get any.
 git add .
 git commit -m "<COMMENTS>"
 git push origin <BRANCH_NAME>
 ```
-- To merge upstream changes into frok branch / syncing a fork
+- To merge upstream changes into fork branch / syncing a fork
 ```bash
 git fetch upstream
 git diff upstream/<BRANCH_NAME> origin/<BRANCH_NAME>
@@ -227,6 +227,15 @@ git rebase --continue
 git rebase --skip
 git rebase --abort // it move to dev_0.1 from (dev_0.1|REBASE 2/3) 
 ```
+
+### Revet changes in git branch
+```bash
+git log
+git revert --no-commit 5fde377..HEAD // 5fde377 commit number
+git commit -m "Revert changes"
+git push
+````
+
 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-70337513-4/chromeskel_a/readme?pixel)](https://github.com/prashantkoshta/developer-hand-book)
