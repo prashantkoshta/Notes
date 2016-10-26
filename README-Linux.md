@@ -100,14 +100,15 @@ tar -tf tar_filename.tar
 ```
 
 ###chmod command - To change permission
--chmod u=rwx,g=rx,o=r myfile 
--Where, The letters u, g, and o stand for "user", "group", and "other" and the letters "r", "w", and "x" stand for "read", "write", and "execute". 
-- Each digit is a combination of the numbers 4, 2, 1, and 0.
---4 stands for "read",
---2 stands for "write",
---1 stands for "execute", and
---0 stands for "no permission."
--So 750 mean U- (4+2+1)rwx, G- (0+4+1)rx, O-(0+0+0) NO permission
+chmod u=rwx,g=rx,o=r myfile
+Where, The letters u, g, and o stand for "user", "group", and "other" 
+and the letters "r", "w", and "x" stand for "read", "write", and "execute".
+Each digit is a combination of the numbers 4, 2, 1, and 0.
+-4 stands for "read",
+-2 stands for "write",
+-1 stands for "execute", and
+-0 stands for "no permission."
+So 750 mean U- (4+2+1)rwx, G- (0+4+1)rx, O-(0+0+0) NO permission
 ```bash
 chmod 755 ./temp 
 ```

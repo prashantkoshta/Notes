@@ -1,5 +1,5 @@
 #Git Command
-##
+
 ###Set your identity for first time user. So it show your name and details when you commit.
 ```bash
 git config --global user.name "Your Name"
