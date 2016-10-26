@@ -20,7 +20,7 @@ pwd
 ```
 ###Change directory
 ```bash
-cd \home
+cd ./home
 cd ~ \\ to root directoy
 ```
 ###ls command - List directory contents
