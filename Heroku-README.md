@@ -20,3 +20,7 @@ $ssh -v git@heroku.com
 ```bash
 $heroku keys:remove adam@workstation.local
 ```
+###Heroku help
+```bash
+$heroku help
+```
